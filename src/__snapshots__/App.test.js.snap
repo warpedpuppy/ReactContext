@@ -1,0 +1,21 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`arbitrary section opens any clicked section 1`] = `
+<nav>
+  <button
+    onClick={[Function]}
+  >
+    button1
+  </button>
+  <button
+    onClick={[Function]}
+  >
+    button2
+  </button>
+  <button
+    onClick={[Function]}
+  >
+    button3
+  </button>
+</nav>
+`;
