@@ -12,14 +12,17 @@ describe('arbitrary section', () => {
 	  ReactDOM.unmountComponentAtNode(div);
 	});
 
- 
+ it('remders menu', () => {
+    const wrapper = shallow(<Menu />)
+    //console.log(toJson(wrapper))
+    expect(toJson(wrapper)).toMatchSnapshot()
+  })
 
   it('opens any clicked section', () => {
     const wrapper = shallow(<Menu />)
     wrapper.find('button').at(1).simulate('click')
     expect(toJson(wrapper)).toMatchSnapshot()
   })
-  // can I set something up to check whether the above test is just checking if the event happened?
   
 })
 

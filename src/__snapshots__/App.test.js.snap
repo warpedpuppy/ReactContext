@@ -19,3 +19,23 @@ exports[`arbitrary section opens any clicked section 1`] = `
   </button>
 </nav>
 `;
+
+exports[`arbitrary section remders menu 1`] = `
+<nav>
+  <button
+    onClick={[Function]}
+  >
+    button1
+  </button>
+  <button
+    onClick={[Function]}
+  >
+    button2
+  </button>
+  <button
+    onClick={[Function]}
+  >
+    button3
+  </button>
+</nav>
+`;
