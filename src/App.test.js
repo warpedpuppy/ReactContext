@@ -14,7 +14,6 @@ describe('arbitrary section', () => {
 
  it('remders menu', () => {
     const wrapper = shallow(<Menu />)
-    //console.log(toJson(wrapper))
     expect(toJson(wrapper)).toMatchSnapshot()
   })
 
