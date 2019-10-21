@@ -1,7 +1,7 @@
 import React from 'react';
 import ReactDOM from 'react-dom';
 import App from './App';
-import Menu from './components/Menu.js';
+import Child from './components/Child.js';
 import { shallow } from 'enzyme'
 import toJson from 'enzyme-to-json'
 
@@ -13,13 +13,13 @@ describe('arbitrary section', () => {
 	});
 
  it('remders menu', () => {
-    const wrapper = shallow(<Menu />)
+    const wrapper = shallow(<Child />)
     expect(toJson(wrapper)).toMatchSnapshot()
   })
 
-  it('opens any clicked section', () => {
-    const wrapper = shallow(<Menu />)
-    wrapper.find('button').at(1).simulate('click')
+  it('changes context', () => {
+    const wrapper = shallow(<Child />)
+    //wrapper.find('button').at(0).simulate('click')
     expect(toJson(wrapper)).toMatchSnapshot()
   })
   
