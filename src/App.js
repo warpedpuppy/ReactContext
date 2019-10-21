@@ -1,29 +1,26 @@
 import React from 'react';
 import './App.css';
-import Menu from './components/Menu.js';
-import ColorContext from './ColorContext';
+import GreatGrandparent from './components/GreatGrandparent.js';
+import NameContext from './NameContext';
 
 class App extends React.Component {
  state = {
-  color: 'orange'
+  name: ''
  };
- handleSetColor = (color) => {
-   this.setState({ color })
+ handleSetName = (name) => {
+   this.setState({ name })
  };
 
  render() {
         const contextValue = {
-         color: this.state.color,
-         setColor: this.handleSetColor,
+         name: this.state.name,
+         setName: this.handleSetName,
         }
        return (
-        <ColorContext.Provider value={contextValue}>
-        <div className="App">
-          <header className="App-header">
-           <Menu />
-          </header>
-        </div>
-        </ColorContext.Provider>
+        <NameContext.Provider value={contextValue}>
+           <div>context value: { this.state.name} </div>
+           <GreatGrandparent />
+        </NameContext.Provider>
       );
   }
 }
