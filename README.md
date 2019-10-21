@@ -1,5 +1,5 @@
-https://warpedpuppy.github.io/ReactContext/screenShot.png
+#REACT CONTEXT EXAMPLE
 
-If you want to embed images, this is how you do it:
+This example shows how to access and alter the conext from a deeply nested react component. :simple_smile: :simple_smile: :simple_smile:
 
 ![Image of Yaktocat](https://warpedpuppy.github.io/ReactContext/screenShot.png)
